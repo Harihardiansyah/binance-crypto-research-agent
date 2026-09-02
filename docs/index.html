@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Binance Crypto Research Agent</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0e11;
+      color: #ffffff;
+    }
+
+    header {
+      background: #111418;
+      padding: 50px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2b3139;
+    }
+
+    h1 {
+      color: #f0b90b;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #b7bdc6;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #161a1e;
+      border: 1px solid #2b3139;
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .card h2 {
+      color: #f0b90b;
+      margin-top: 0;
+    }
+
+    .report {
+      margin-top: 30px;
+      background: #111418;
+      border-radius: 12px;
+      padding: 25px;
+      border: 1px solid #2b3139;
+    }
+
+    .button {
+      display: inline-block;
+      background: #f0b90b;
+      color: #111418;
+      border: none;
+      padding: 14px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      opacity: 0.85;
+    }
+
+    .output {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      background: #0b0e11;
+      border-left: 4px solid #f0b90b;
+      font-family: monospace;
+      white-space: pre-line;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #848e9c;
+      border-top: 1px solid #2b3139;
+    }
+
+    a {
+      color: #f0b90b;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Binance Crypto Research Agent</h1>
+
+  <p class="subtitle">
+    AI Agent for Cryptocurrency Research using Binance Skills
+  </p>
+
+  <button class="button" onclick="runDemo()">
+    Run Agent Demo
+  </button>
+</header>
+
+<div class="container">
+
+  <h2>Agent Capabilities</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h2>📊 Market Ranking</h2>
+      <p>Identifies cryptocurrency candidates based on market ranking and market conditions.</p>
+    </div>
+
+    <div class="card">
+      <h2>💰 Smart Money</h2>
+      <p>Analyzes smart money activity and potential market inflows.</p>
+    </div>
+
+    <div class="card">
+      <h2>🔍 Token Research</h2>
+      <p>Retrieves cryptocurrency and blockchain information for analysis.</p>
+    </div>
+
+    <div class="card">
+      <h2>🛡 Security Analysis</h2>
+      <p>Evaluates token security, volatility, and potential risks.</p>
+    </div>
+
+    <div class="card">
+      <h2>📈 Trading Signals</h2>
+      <p>Generates structured trading observations and market signals.</p>
+    </div>
+
+    <div class="card">
+      <h2>📋 Final Report</h2>
+      <p>Combines research results into a structured cryptocurrency research report.</p>
+    </div>
+
+  </div>
+
+  <div class="report">
+
+    <h2>Interactive Agent Demo</h2>
+
+    <p>
+      Click the button below to simulate the Binance Crypto Research Agent workflow.
+    </p>
+
+    <button class="button" onclick="runDemo()">
+      Generate Research Report
+    </button>
+
+    <div class="output" id="output"></div>
+
+  </div>
+
+</div>
+
+<footer>
+
+  <p>
+    Built for the Binance Agent OS Mini Hackathon
+  </p>
+
+  <p>
+    <a href="https://github.com/Harhadiansyah/binance-crypto-research-agent">
+      View Source Code on GitHub
+    </a>
+  </p>
+
+</footer>
+
+<script>
+
+function runDemo() {
+
+  const output = document.getElementById("output");
+
+  output.style.display = "block";
+
+  output.innerHTML =
+`====================================
+FINAL CRYPTO RESEARCH REPORT
+====================================
+
+Selected Cryptocurrency:
+Bitcoin (BTC)
+
+Category:
+Cryptocurrency
+
+Network:
+Bitcoin
+
+Market Analysis:
+BTC selected as a major cryptocurrency candidate
+for market trend monitoring.
+
+Smart Money Analysis:
+Monitoring potential institutional and
+high-volume market activity.
+
+Security Risks:
+- Market volatility
+- Macro-economic uncertainty
+- Exchange and custody risks
+
+Trading Signal:
+Monitor trend confirmation and
+risk management levels.
+
+Final Risk Assessment:
+MEDIUM
+
+====================================
+Demo completed successfully.
+====================================`;
+}
+
+</script>
+
+</body>
+</html>
